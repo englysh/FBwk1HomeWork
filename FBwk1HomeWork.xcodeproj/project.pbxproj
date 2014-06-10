@@ -19,6 +19,8 @@
 		B9344C0A1946683C00993952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9344BF21946683C00993952 /* UIKit.framework */; };
 		B9344C121946683C00993952 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9344C101946683C00993952 /* InfoPlist.strings */; };
 		B9344C141946683C00993952 /* FBwk1HomeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9344C131946683C00993952 /* FBwk1HomeWorkTests.m */; };
+		B9344C2019466A5400993952 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9344C1E19466A5400993952 /* MainViewController.m */; };
+		B9344C2119466A5400993952 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9344C1F19466A5400993952 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		B9344C0F1946683C00993952 /* FBwk1HomeWorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBwk1HomeWorkTests-Info.plist"; sourceTree = "<group>"; };
 		B9344C111946683C00993952 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9344C131946683C00993952 /* FBwk1HomeWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBwk1HomeWorkTests.m; sourceTree = "<group>"; };
+		B9344C1D19466A5400993952 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B9344C1E19466A5400993952 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B9344C1F19466A5400993952 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				B9344BFE1946683C00993952 /* AppDelegate.m */,
 				B9344C001946683C00993952 /* Images.xcassets */,
 				B9344BF51946683C00993952 /* Supporting Files */,
+				B9344C1D19466A5400993952 /* MainViewController.h */,
+				B9344C1E19466A5400993952 /* MainViewController.m */,
+				B9344C1F19466A5400993952 /* MainViewController.xib */,
 			);
 			path = FBwk1HomeWork;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9344BF91946683C00993952 /* InfoPlist.strings in Resources */,
+				B9344C2119466A5400993952 /* MainViewController.xib in Resources */,
 				B9344C011946683C00993952 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9344BFF1946683C00993952 /* AppDelegate.m in Sources */,
+				B9344C2019466A5400993952 /* MainViewController.m in Sources */,
 				B9344BFB1946683C00993952 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
