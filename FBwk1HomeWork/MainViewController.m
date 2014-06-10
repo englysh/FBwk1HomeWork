@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIView *postBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 @property (weak, nonatomic) IBOutlet UIView *likesComments;
-- (IBAction)keyBoard:(id)sender;
+
 
 
 
@@ -53,7 +53,7 @@
     self.likesComments.layer.borderWidth = 1;
     self.likesComments.layer.borderColor = [UIColor
                                         colorWithRed:240.0f/255.0f
-                                        green:240.0f/255.0f
+                                       green:240.0f/255.0f
                                         blue:240.0f/255.0f
                                         alpha:1.0f].CGColor;
 
@@ -68,5 +68,8 @@
 }
 
 - (IBAction)keyBoard:(id)sender {
+}
+- (IBAction)likeButton:(UIButton *)sender {
+    
 }
 @end

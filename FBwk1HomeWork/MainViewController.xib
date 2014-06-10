@@ -143,23 +143,80 @@
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XF8-Gv-Bwm">
                                     <rect key="frame" x="0.0" y="347" width="300" height="46"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87z-w8-a2R">
+                                            <rect key="frame" x="16" y="-2" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="like_btn">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Like">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                            <state key="selected">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Like">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.47058823529411764" green="0.19146327554744522" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                            <font key="NSOriginalFont" size="12" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                            <state key="highlighted" image="like_btn_selected">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Like">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.47058823529411764" green="0.67843137254901964" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                            <connections>
+                                                <action selector="likeButton:" destination="-1" eventType="touchUpInside" id="hXm-Cy-ktB"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-oe-8eG">
+                                            <rect key="frame" x="104" y="-2" width="89" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="comment_btn">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Comment">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19B-p4-Z7v">
+                                            <rect key="frame" x="207" y="-2" width="89" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="share">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Share">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                        </button>
+                                    </subviews>
                                     <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vME-9I-ifz">
-                                    <rect key="frame" x="10" y="358" width="226" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <attributedString key="attributedText">
-                                        <fragment content="11 Likes 2 Comments">
-                                            <attributes>
-                                                <color key="NSColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <nil key="highlightedColor"/>
-                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -169,10 +226,6 @@
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar" translatesAutoresizingMaskIntoConstraints="NO" id="IHU-aC-d2y">
                             <rect key="frame" x="0.0" y="523" width="320" height="45"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="commentbar" translatesAutoresizingMaskIntoConstraints="NO" id="tPf-vE-fR9">
-                            <rect key="frame" x="0.0" y="479" width="320" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiZ-TF-j1q">
@@ -185,6 +238,34 @@
                                 <action selector="keyBoard:" destination="-1" eventType="touchUpInside" id="HoY-Zh-vZJ"/>
                             </connections>
                         </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzw-zC-Mi7">
+                            <rect key="frame" x="0.0" y="478" width="320" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Write a comment..." minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="BFb-TB-CPD">
+                                    <rect key="frame" x="8" y="8" width="240" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <attributedString key="attributedText"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3A-Rj-pfT">
+                                    <rect key="frame" x="262" y="8" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Post">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96862751245498657" green="0.96862751245498657" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.8256" green="0.83821333333333337" blue="0.85999999999999999" alpha="1" colorSpace="deviceRGB"/>
                 </view>
@@ -195,10 +276,13 @@
         </view>
     </objects>
     <resources>
-        <image name="commentbar" width="320" height="44"/>
+        <image name="comment_btn" width="17" height="40"/>
+        <image name="like_btn" width="17" height="40"/>
+        <image name="like_btn_selected" width="17" height="40"/>
         <image name="main_image" width="313" height="209"/>
         <image name="navbar" width="320" height="64"/>
         <image name="profile_image" width="34" height="34"/>
+        <image name="share" width="17" height="40"/>
         <image name="tabbar" width="320" height="44"/>
     </resources>
 </document>
