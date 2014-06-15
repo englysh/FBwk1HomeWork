@@ -9,6 +9,7 @@
                 <outlet property="likesComments" destination="XF8-Gv-Bwm" id="u3n-uf-EMD"/>
                 <outlet property="mainImage" destination="Inv-7r-pqF" id="RAF-St-pQY"/>
                 <outlet property="postBackground" destination="hky-ET-lTn" id="Rtx-CQ-q44"/>
+                <outlet property="theLikeButton" destination="87z-w8-a2R" id="8nz-Iz-dHt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -157,7 +158,7 @@
                                                     </fragment>
                                                 </attributedString>
                                             </state>
-                                            <state key="selected">
+                                            <state key="selected" image="like_btn_selected">
                                                 <attributedString key="attributedTitle">
                                                     <fragment content="Like">
                                                         <attributes>
@@ -181,7 +182,7 @@
                                                 </attributedString>
                                             </state>
                                             <connections>
-                                                <action selector="likeButton:" destination="-1" eventType="touchUpInside" id="hXm-Cy-ktB"/>
+                                                <action selector="onTouchDownLike:" destination="-1" eventType="touchDown" id="QNM-wY-Crb"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-oe-8eG">
@@ -268,12 +269,21 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.8256" green="0.83821333333333337" blue="0.85999999999999999" alpha="1" colorSpace="deviceRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="icJ-Q1-oyv" appends="YES" id="rFl-Hm-zxU"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer id="icJ-Q1-oyv">
+            <connections>
+                <action selector="onTapOut:" destination="-1" id="2TH-Cj-xAC"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="comment_btn" width="17" height="40"/>

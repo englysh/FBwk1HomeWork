@@ -12,6 +12,12 @@
 @property (weak, nonatomic) IBOutlet UIView *postBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 @property (weak, nonatomic) IBOutlet UIView *likesComments;
+- (IBAction)onTapOut:(id)sender;
+
+- (IBAction)theLikeButton:(id)sender;
+- (IBAction)onTouchDownLike:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *theLikeButton;
 
 
 
@@ -57,6 +63,10 @@
                                         blue:240.0f/255.0f
                                         alpha:1.0f].CGColor;
 
+    self.mainImage.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.mainImage.layer.shadowOffset = CGSizeMake (1,1);
+    self.mainImage.layer.shadowOpacity = 0.25;
+    self.mainImage.layer.shadowRadius = 1;
     
 
 }
@@ -69,7 +79,15 @@
 
 - (IBAction)keyBoard:(id)sender {
 }
-- (IBAction)likeButton:(UIButton *)sender {
-    
+- (IBAction)onTapOut:(id)sender {
+    [self.view endEditing:YES];
+}
+
+- (IBAction)theLikeButton:(id)sender {
+    self.theLikeButton.selected = !self.theLikeButton.selected;
+
+}
+
+- (IBAction)onTouchDownLike:(id)sender {
 }
 @end

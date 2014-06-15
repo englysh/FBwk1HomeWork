@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5688BAE-A7A3-4973-8EBA-95FBF16BB1D3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FBwk1HomeWork</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3B69EE2C-0DB4-4F37-B113-C042AF9054D5</key>
+		<string>https://github.com/englysh/FBwk1HomeWork.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FBwk1HomeWork.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3B69EE2C-0DB4-4F37-B113-C042AF9054D5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/englysh/FBwk1HomeWork.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3B69EE2C-0DB4-4F37-B113-C042AF9054D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3B69EE2C-0DB4-4F37-B113-C042AF9054D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FBwk1HomeWork</string>
+		</dict>
+	</array>
+</dict>
+</plist>
